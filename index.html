@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Le Festin</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <img class="logo"  src="c:\Users\gcorn\Desktop\LE FESTIN\IMG\logo_no_bg.png" alt="logo">
+   <div class="collapse navbar-collapse" id="navbarScroll">
+      <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Accueil</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#galerie">Nos Plats</a>
+        </li>
+          <li class="nav-item">
+          <a class="nav-link" href="#reservation">Réservation</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="#about">A propos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#faq">FAQ</a>
+        </li>
+      </ul>
+      </div>
+    </div>
+</nav>
+</header>
+
+  <!-- À PROPOS -->
+  <section id="about" class="container py-5">
+    <div class="row align-items-center">
+      <div class="col-md-6 mb-4 mb-md-0">
+        <img src="https://th.bing.com/th/id/R.d3bde07a4a44f7563930cd0f5a601f0d?rik=K%2frNZpeXUMSBJQ&pid=ImgRaw&r=0" alt="Restaurant" class="img-fluid rounded">
+      </div>
+      <div class="col-md-6">
+        <h2>À propos de nous</h2>
+        <p>Le Festin est un restaurant gastronomique situé au cœur de la ville. Nous proposons une cuisine raffinée, locale et de saison dans un cadre chaleureux.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CARROUSEL -->
+  <section id="galerie" class="container py-5">
+    <h2 class="text-center mb-4">Nos plats</h2>
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner rounded">
+        <div class="carousel-item active">
+          <img src="c:\Users\gcorn\Desktop\LE FESTIN\IMG\plat_1.png" class="d-block w-100" alt="Plat 1">
+        </div>
+        <div class="carousel-item">
+          <img src="c:\Users\gcorn\Desktop\LE FESTIN\IMG\plat_2.png" class="d-block w-100" alt="Plat 2">
+        </div>
+        <div class="carousel-item">
+          <img src="https://tse4.mm.bing.net/th/id/OIP.9Yfdtuk6pSgYkYBKYmj43QHaLH?rs=1&pid=ImgDetMain&o=7&rm=3" class="d-block w-100" alt="Salle">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="container py-5">
+    <h2 class="text-center mb-4">FAQ</h2>
+    <div class="accordion" id="faqAccordion">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+            Quels sont vos horaires ?
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">Du mardi au dimanche de 12h à 14h et de 19h à 22h.</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+            Avez-vous des plats végétariens ?
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">Oui, notre menu comprend plusieurs options végétariennes.</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+            Peut-on réserver pour un groupe ?
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">Oui, nous accueillons les groupes jusqu’à 20 personnes sur réservation.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FORMULAIRE -->
+  <section id="reservation" class="container py-5">
+    <h2 class="text-center mb-4">Réserver une table</h2>
+    <form class="row g-3">
+      <div class="col-md-6">
+        <input type="text" class="form-control" placeholder="Nom" required>
+      </div>
+      <div class="col-md-6">
+        <input type="email" class="form-control" placeholder="Email" required>
+      </div>
+      <div class="col-md-6">
+        <input type="date" class="form-control" required>
+      </div>
+      <div class="col-md-6">
+        <input type="time" class="form-control" required>
+      </div>
+      <div class="col-12">
+        <textarea class="form-control" placeholder="Message (facultatif)" rows="4"></textarea>
+      </div>
+      <div class="col-12 text-center">
+        <button type="submit" class="btn btn-dark px-5">Envoyer</button>
+      </div>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="text-center">
+    <p>📍 123 rue Gourmande, Paris — 📞 01 23 45 67 89</p>
+    <p>🕒 Du mardi au dimanche</p>
+    <div>
+      <a href="#" class="me-2">Facebook</a>
+      <a href="#" class="me-2">Instagram</a>
+      <a href="#">TripAdvisor</a>
+    </div>
+  </footer>
+
+</body>
+</html>
